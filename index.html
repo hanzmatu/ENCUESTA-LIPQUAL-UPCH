@@ -56,10 +56,10 @@
     <script>
         // --- PREGUNTAS DE LA ENCUESTA ---
         const surveyData = [
-            { id: 'AF1', text: 'El personal muestra disposición real para ayudar cuando lo necesito.' },
-            { id: 'AF2', text: 'El personal brinda un trato respetuoso y amable a los estudiantes.' },
-            { id: 'AF3', text: 'El personal ofrece atención personalizada cuando se le solicita.' },
-            { id: 'AF5', text: 'El personal responde con claridad las consultas académicas o interdisciplinarias.' },
+            { id: 'AF1', text: 'El personal muestra disposición real para ayudarme cuando lo necesito.' },
+            { id: 'AF2', text: 'El personal me brinda un trato respetuoso y amable.' },
+            { id: 'AF3', text: 'El personal ofrece atención personalizada cuando se lo solicita.' },
+            { id: 'AF5', text: 'El personal responde con claridad mia consultas académicas o interdisciplinarias.' },
             { id: 'CI1', text: 'Puedo acceder a documentos en texto completo mediante las bases de datos.' },
             { id: 'CI2', text: 'El sitio web de la biblioteca me permite encontrar información por mi cuenta.' },
             { id: 'CI3', text: 'Las herramientas de búsqueda facilitan localizar lo que necesito.' },
@@ -181,9 +181,9 @@
                         <h2 class="text-2xl sm:text-3xl font-bold text-gray-800">${questionData.text}</h2>
                     </div>
                     <form id="question-form" class="space-y-8">
-                        ${createScaleHTML('min', 'Lo Mínimo Aceptable', questionData.id)}
-                        ${createScaleHTML('real', 'Como es en la Realidad', questionData.id)}
-                        ${createScaleHTML('des', 'Se Debería Ofrecer', questionData.id)}
+                        ${createScaleHTML('min', 'Lo Mínimo aceptable', questionData.id)}
+                        ${createScaleHTML('real', 'Como es en la realidad', questionData.id)}
+                        ${createScaleHTML('des', 'Se debería ofrecer', questionData.id)}
                     </form>
                     <div class="mt-10 flex justify-between items-center">
                         <button id="prev-btn" class="text-gray-600 hover:text-gray-800 font-semibold py-2 px-4 rounded-lg transition ${currentQuestionIndex === 0 ? 'opacity-50 cursor-not-allowed' : ''}" ${currentQuestionIndex === 0 ? 'disabled' : ''}>
@@ -326,4 +326,5 @@
 
 </body>
 </html>
+
 
